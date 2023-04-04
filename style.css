@@ -1,0 +1,287 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+.home-header {
+  display: block;
+  margin-bottom: 0px;
+  font-size: 20px;
+
+}
+
+
+header {
+  display: block;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+
+/*STYLING FOR NAVIGATION BAR*/
+/*targets nav bar links*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: sienna;
+  height:50px;
+  text-align: center;
+  opacity: 70%;
+}
+/*floats links to the right side of the page*/
+li {
+  float: right;
+}
+/*this line targets the nav bar links*/
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+/*changes background color to pink when you hover over the link*/
+li a:hover {
+  background-color: floralwhite;
+}
+
+
+
+
+/* HOME PAGE STYLING */
+
+/*STYLING FOR HERO IMAGE*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image {
+background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("bobahero.jpeg");
+height: 100%;
+background-position: center;
+background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 200px;
+  font-family: sans-serif;
+  
+}
+  .button {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: sienna;
+}
+
+/*STYLING FOR FOOTER*/
+.social-description {
+  color:white;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-content: center;
+  background-color: black;
+  padding: 40px;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+
+
+/*styles links to social media in footer*/
+.pr-4 {
+  padding-left: 30px;
+  text-align: center;
+  
+  
+  
+}
+
+
+/*STYLING FOR CONTACT PAGE*/
+
+.contact-body {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("contactpagebackground.jpeg");
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  height: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 40px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/*styling for button on contact form */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* when hovering over button the words turn pink */
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+/*styling for the container the contact form is in */
+.container {
+  margin-top: 60px;
+  border-radius: 10px;
+  background-color:floralwhite;
+  padding: 20px;
+  width: 50%;
+  justify-content: center;
+  margin-left: 22%;
+  margin-bottom: 80px;
+}
+
+.contact-body {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+/*STYLING FOR MENU PAGE*/
+/* places menu photos ina grid */
+.grid-container {
+  box-sizing: border-box;
+  display: grid;
+  gap: 60px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+  text-align: center;
+  margin-bottom: 80px;
+  /*center items in the center of the page*/
+  
+}
+
+.menu-main {
+  background-color: floralwhite;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive design for mobile  */
+@media only screen and (max-width: 768px) {
+  
+  header {
+  display: block;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+  
+  } 
+
+  footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-content: center;
+  background-color: black;
+  padding: 40px;
+  margin-top: 0px;
+  margin-bottom: auto;
+}
+
+.grid-container {
+  box-sizing: border-box;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 80px;
+}
+  /*center items in the center of the page*/
+
+.home-header {
+  display: block;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+  
+.hero-image {
+background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("bobahero.jpeg");
+height: 100%;
+background-position: center;
+background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 60px;
+  font-family: sans-serif;
+  
+}
+
+button {
+  background-color: black;
+  border-radius: 7px;
+  color: floralwhite;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: sienna;
+}
+}
+
+

@@ -203,7 +203,7 @@ input[type=submit]:hover {
 
 /* Responsive design for mobile  */
 @media only screen and (max-width: 768px) {
-  
+
   header {
   display: block;
   margin-bottom: 20px;
